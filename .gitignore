@@ -1,0 +1,12 @@
+### Python template
+
+# Byte-compiled
+__pycache__/
+
+# JetBrains
+.idea/
+
+# virtualenv
+.venv/
+
+.env
