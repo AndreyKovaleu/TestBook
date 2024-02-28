@@ -9,6 +9,8 @@ from keyboards.main_menu import set_main_menu
 
 
 # from handlers import router as main_handlers_router
+from handlers.user_handlers import router as user_router
+from handlers.other_handlers import router as other_router
 
 
 async def main() -> None:
@@ -18,6 +20,8 @@ async def main() -> None:
     dp = Dispatcher()
 
     await set_main_menu(bot)
+
+    dp.include_routers(user_router, other_router)
 
     # dp.workflow_data.update({"admin_id": config.tg_bot.admin_ids[0]})
     # dp.include_router(main_handlers_router)
