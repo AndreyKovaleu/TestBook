@@ -28,3 +28,8 @@ LEXICON_COMMANDS: dict[str, str] = {
     '/bookmarks': 'Мои закладки',
     '/help': 'Справка по работе бота'
 }
+
+LEXICON_ADMIN: dict[str, str] = {
+    "start": "Бот запущен",
+    "stop": "Бот остановлен"
+}
